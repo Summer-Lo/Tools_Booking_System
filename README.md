@@ -5,6 +5,8 @@ This project provided a Self-served IoT station that allows the users to borrow 
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/description-workflow.jpg)
 
 **System Operattion Guidelines** 
+----------------------------
+
 #### Situation 1: Borrowing equipment
 1. Tap Polyu's ID card on the card reader
 2. Select Categories (IoT, Electronic, Hand Tools, Equipments)
@@ -27,7 +29,8 @@ This project provided a Self-served IoT station that allows the users to borrow 
 2. Select the Container ID
 3. Wait for the container to open
 
-### Dashboard Support
+**Dashboard Support**
+----------------------------
 All the Dashboard and operation can be completed via the touch screen monitor with Raspberry Pi or NUC. The only requirement is that the controller needs to install the browser and be able to connect to the internet.
 
 ##### Borrowing Dashboard
@@ -42,11 +45,11 @@ All the Dashboard and operation can be completed via the touch screen monitor wi
 ### Data Record Format
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/database.jpg)
 
-### Product Demonstration
-
+**Product Demonstration**
+----------------------------
 ##### Borrow equipment Demonstration
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_demo.gif)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/demo/borrow_demo.gif)
 
 ##### Return equipment Demonstration
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_demo.gif)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/demo/return_demo.gif)
 
