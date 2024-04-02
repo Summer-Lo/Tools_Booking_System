@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Summer Lo, hk, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+D:\09-5F_ReLayout\booking_system\IEMakerLab_IoT_Station_Control\MDK-ARM\IEMakerLab_IoT_Station_Control.uvprojx
+Project File Date:  07/19/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Rebuild target 'IEMakerLab_IoT_Station_Control'
+assembling startup_stm32f103xe.s...
+compiling LCD_BK.c...
+LCD_BK.c(48): warning:  #1-D: last line of file ends without a newline
+  //    HAL_Delay(500);
+LCD_BK.c: 1 warning, 0 errors
+compiling gpio.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling lcd.c...
+lcd.c(125): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(lcd->rs_port, lcd->rs_pin, LCD_COMMAND_REG);		// Write to command register
+lcd.c(144): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(lcd->rs_port, lcd->rs_pin, LCD_DATA_REG);			// Write to data register
+lcd.c(165): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(lcd->data_port[i], lcd->data_pin[i], (data >> i) & 0x01);
+lcd.c(168): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(lcd->en_port, lcd->en_pin, 1);
+lcd.c(170): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(lcd->en_port, lcd->en_pin, 0); 		// Data receive on falling edge
+lcd.c: 5 warnings, 0 errors
+compiling lcd16x2.c...
+compiling main.c...
+../Core/Src/main.c(231): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  				sprintf(LCD_msg, "Row: %d Col: %d",esp2gd_row,esp2gd_col);
+../Core/Src/main.c(234): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				lcd16x2_printf(LCD_msg);
+../Core/Src/main.c(236): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+  				lcd16x2_printf(Rx_data);
+../Core/Src/main.c(159): warning:  #177-D: variable "msg"  was declared but never referenced
+  	char msg[10];
+../Core/Src/main.c(161): warning:  #177-D: variable "rowNum"  was declared but never referenced
+  	int rowNum = 10;
+../Core/Src/main.c(162): warning:  #177-D: variable "colNum"  was declared but never referenced
+  	int colNum = 10;
+../Core/Src/main.c: 6 warnings, 0 errors
+compiling usart.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_dma.c...
+linking...
+Program Size: Code=13392 RO-data=1052 RW-data=56 ZI-data=1808  
+FromELF: creating hex file...
+"IEMakerLab_IoT_Station_Control\IEMakerLab_IoT_Station_Control.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_IEMakerLab_IoT_Station_Control
+  C:/Users/khinlo/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/khinlo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
