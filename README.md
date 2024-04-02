@@ -42,7 +42,8 @@ All the Dashboard and operation can be completed via the touch screen monitor wi
 ##### Administrator Dashboard
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/admin_full.jpg)
 
-### Data Record Format
+**Data Record Format**
+----------------------------
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/database.jpg)
 
 **Product Demonstration**
