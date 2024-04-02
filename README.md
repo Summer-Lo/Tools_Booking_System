@@ -2,7 +2,7 @@
 This project provided a Self-served IoT station that allows the users to borrow and return the IoT device by themselves. The station was developed for Hong Kong Polytechnic University students which users must use their Student ID card to identify. Besides, this self-served station contains the full functions of borrowing, returning, and administrator monitoring and controlling.
 
 **Workflow**  
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/description-workflow.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/description-workflow.jpg)
 
 **System Operattion Guidelines** 
 #### Situation 1: Borrowing equipment
@@ -31,22 +31,22 @@ This project provided a Self-served IoT station that allows the users to borrow 
 All the Dashboard and operation can be completed via the touch screen monitor with Raspberry Pi or NUC. The only requirement is that the controller needs to install the browser and be able to connect to the internet.
 
 ##### Borrowing Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/borrow_full.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_full.jpg)
 
 ##### Returning Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/return_full.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_full.jpg)
 
 ##### Administrator Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/admin_full.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/admin_full.jpg)
 
 ### Data Record Format
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/database.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/database.jpg)
 
 ### Product Demonstration
 
 ##### Borrow equipment Demonstration
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/borrow_demo.gif)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_demo.gif)
 
 ##### Return equipment Demonstration
-![image](https://github.com/Summer-Lo/Tools_Booking_System/doc/img/return_demo.gif)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_demo.gif)
 
