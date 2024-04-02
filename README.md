@@ -34,10 +34,10 @@ This project provided a Self-served IoT station that allows the users to borrow 
 All the Dashboard and operation can be completed via the touch screen monitor with Raspberry Pi or NUC. The only requirement is that the controller needs to install the browser and be able to connect to the internet.
 
 ##### Borrowing Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_full.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_full.JPG)
 
 ##### Returning Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_full.JPG)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_full.jpg)
 
 ##### Administrator Dashboard
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/admin_full.jpg)
