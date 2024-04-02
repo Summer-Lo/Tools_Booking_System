@@ -37,7 +37,7 @@ All the Dashboard and operation can be completed via the touch screen monitor wi
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/borrow_full.jpg)
 
 ##### Returning Dashboard
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_full.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/return_full.JPG)
 
 ##### Administrator Dashboard
 ![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/admin_full.jpg)
