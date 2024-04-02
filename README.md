@@ -44,7 +44,7 @@ All the Dashboard and operation can be completed via the touch screen monitor wi
 
 **Data Record Format**
 ----------------------------
-![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/database.jpg)
+![image](https://github.com/Summer-Lo/Tools_Booking_System/blob/main/doc/img/psotgre_database.jpg)
 
 **Product Demonstration**
 ----------------------------
