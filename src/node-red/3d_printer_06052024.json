@@ -1,0 +1,2960 @@
+[
+    {
+        "id": "c2e622558b630ea1",
+        "type": "ui_text_input",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "label": "<font size=6> <font color=red>Step 1: <font color=black>Tap <font color=red>PolyU ID Card",
+        "tooltip": "",
+        "group": "dd1a2d9088add216",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "password",
+        "delay": "700",
+        "topic": "payload",
+        "sendOnBlur": true,
+        "className": "card1",
+        "topicType": "msg",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "c472015e60e12c9c"
+            ]
+        ]
+    },
+    {
+        "id": "d6f535dd672a9f7e",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "id",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "486fe3f050356407"
+            ]
+        ]
+    },
+    {
+        "id": "c472015e60e12c9c",
+        "type": "switch",
+        "z": "867919451c2ce60b",
+        "name": "Null?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "d6f535dd672a9f7e"
+            ]
+        ]
+    },
+    {
+        "id": "c78138c48d94c746",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1801",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 800,
+        "wires": [
+            [
+                "bc68b369f9bad87f",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "a95447cc0cc5c8f9",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1802",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 800,
+        "wires": [
+            [
+                "32dcf4bf94325231",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "eab0cabe10549513",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1803",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "6b95e70ada75ff77",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "d2139ec5b75f7a9d",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1804",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 960,
+        "wires": [
+            [
+                "dd7b7124d6b5feed",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "c96897762810edb3",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1805",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 960,
+        "wires": [
+            [
+                "14677fda4ab734cf",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "a7217897640bb083",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1806",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 960,
+        "wires": [
+            [
+                "7193635519741a72",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "6914e7cc88154cab",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 19,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1808",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 1120,
+        "wires": [
+            [
+                "f9ba38b308f3438e",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "04219805d421f851",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 20,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1809",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 1120,
+        "wires": [
+            [
+                "7007f6c11644729f",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "3e613655df1da01f",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 21,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1810",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 1120,
+        "wires": [
+            [
+                "0242dae78357d13a",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "1f4e62e9d5078574",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1807",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
+                "1ca4f6d74295110e",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "c2619d9c24260689",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 22,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1811",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 1120,
+        "wires": [
+            [
+                "dc944fda6c5051d5",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "40f97e974f36702c",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 37,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1800",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "e3a1fcbd5233a6d8",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "b2585e54708d1ced",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 31,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1812",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 680,
+        "wires": [
+            [
+                "0445ea16f2a486d3",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "042ec307ff1a7deb",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 30,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "1813",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "fe2b38745eefca22",
+                "c95455d5aab6fa85"
+            ]
+        ]
+    },
+    {
+        "id": "b3396d46d6a219e0",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 29,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "NA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 730,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7def3e51a4f0fd0",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 28,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "NA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 930,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "195aec45705c0d53",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "NA",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03fb9130422410f3",
+        "type": "ui_media",
+        "z": "867919451c2ce60b",
+        "group": "dd1a2d9088add216",
+        "name": "",
+        "width": 8,
+        "height": 6,
+        "order": 4,
+        "category": "media",
+        "file": "polyu_card.png",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 790,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b8037e7f90bbcdf",
+        "type": "ui_text",
+        "z": "867919451c2ce60b",
+        "group": "dd1a2d9088add216",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "<font size=6> <font color=red>Step 1: <font color=black>Tap <font color=red>PolyU ID Card",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 400,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7b4cd5026160520c",
+        "type": "postgrestor",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "query": "SELECT * FROM printer ORDER BY id ASC;",
+        "postgresDB": "d37f48e234e2b6f4",
+        "output": true,
+        "outputs": 1,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "72a1af1bc75921b7",
+                "764ec67946edaa77"
+            ]
+        ]
+    },
+    {
+        "id": "1fa2fee0814f8400",
+        "type": "inject",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "7b4cd5026160520c"
+            ]
+        ]
+    },
+    {
+        "id": "764ec67946edaa77",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "Get equ_id from database",
+        "func": "msg = msg.payload;\nvar printerno = msg['rowCount'];\nvar printerOrder = [];\nvar printerStatus = [];\nvar printerColor = [];\nvar printerEnabled = [];\nvar list = ['Bambu X1-Carbon', 'V1-Pro 01', 'V1-Pro 02', 'V1-Pro 03', 'V1-Pro 05', 'V1-Pro 06', 'V1-Pro 07', 'V1-Pro 08', 'V1-Pro 09', 'V1-Pro 10', 'V1-Pro 11', 'V1-Pro 12', 'K1-Max 01', 'K1-Max 02'];\nvar printerTitle = [];\n\nvar printerTitle1 = flow.get('printerTitle1');\nvar printerTitle2 = flow.get('printerTitle2');\nvar printerTitle3 = flow.get('printerTitle3');\nvar printerTitle4 = flow.get('printerTitle4');\nvar printerTitle5 = flow.get('printerTitle5');\nvar printerTitle6 = flow.get('printerTitle6');\nvar printerTitle7 = flow.get('printerTitle7');\nvar printerTitle8 = flow.get('printerTitle8');\nvar printerTitle9 = flow.get('printerTitle9');\nvar printerTitle10 = flow.get('printerTitle10');\nvar printerTitle11 = flow.get('printerTitle11');\nvar printerTitle12 = flow.get('printerTitle12');\nvar printerTitle13 = flow.get('printerTitle13');\nvar printerTitle14 = flow.get('printerTitle14');\nvar printerTitleTemp = [printerTitle1, printerTitle2, printerTitle3, printerTitle4, printerTitle5, printerTitle6, printerTitle7, printerTitle8, printerTitle9, printerTitle10, printerTitle11, printerTitle12, printerTitle13, printerTitle14];\n\nfor (let index = 0; index < printerno; index++) {\n    var order = msg['rows'][index]['id'];\n    var status = msg['rows'][index]['status'];\n    printerOrder.push(order);\n    printerStatus.push(status);\n    if(status == true){\n        if (order == 1){\n            printerColor.push(\"Blue\");\n            printerEnabled.push(true);\n            printerTitle.push('Bambu X1-Carbon');\n        }\n        else if (order >= 2 && order <= 12) {\n            printerColor.push(\"Green\");\n            printerEnabled.push(true);\n            printerTitle.push(list[order-1]);\n        }\n        else if (order == 13) {\n            printerColor.push(\"Orange\");\n            printerEnabled.push(true);\n            printerTitle.push('K1-Max 01');\n        }\n        else if (order == 14) {\n            printerColor.push(\"Pink\");\n            printerEnabled.push(true);\n            printerTitle.push('K1-Max 02');\n        }\n    }\n    if(status == false){\n        printerColor.push(\"Red\");\n        printerEnabled.push(false);\n        printerTitle.push(printerTitleTemp[order-1]);\n    }\n}\nflow.set(\"printerOrder\", printerOrder);\nflow.set(\"printerStatus\", printerStatus);\nflow.set(\"printerColor\", printerColor);\n\nflow.set(\"printerColor1\", printerColor[0]);\nflow.set(\"printerColor2\", printerColor[1]);\nflow.set(\"printerColor3\", printerColor[2]);\nflow.set(\"printerColor4\", printerColor[3]);\nflow.set(\"printerColor5\", printerColor[4]);\nflow.set(\"printerColor6\", printerColor[5]);\nflow.set(\"printerColor7\", printerColor[6]);\nflow.set(\"printerColor8\", printerColor[7]);\nflow.set(\"printerColor9\", printerColor[8]);\nflow.set(\"printerColor10\", printerColor[9]);\nflow.set(\"printerColor11\", printerColor[10]);\nflow.set(\"printerColor12\", printerColor[11]);\nflow.set(\"printerColor13\", printerColor[12]);\nflow.set(\"printerColor14\", printerColor[13]);\n\nflow.set(\"printerEnabled1\", printerEnabled[0]);\nflow.set(\"printerEnabled2\", printerEnabled[1]);\nflow.set(\"printerEnabled3\", printerEnabled[2]);\nflow.set(\"printerEnabled4\", printerEnabled[3]);\nflow.set(\"printerEnabled5\", printerEnabled[4]);\nflow.set(\"printerEnabled6\", printerEnabled[5]);\nflow.set(\"printerEnabled7\", printerEnabled[6]);\nflow.set(\"printerEnabled8\", printerEnabled[7]);\nflow.set(\"printerEnabled9\", printerEnabled[8]);\nflow.set(\"printerEnabled10\", printerEnabled[9]);\nflow.set(\"printerEnabled11\", printerEnabled[10]);\nflow.set(\"printerEnabled12\", printerEnabled[11]);\nflow.set(\"printerEnabled13\", printerEnabled[12]);\nflow.set(\"printerEnabled14\", printerEnabled[13]);\n\nflow.set(\"printerTitle1\", printerTitle[0]);\nflow.set(\"printerTitle2\", printerTitle[1]);\nflow.set(\"printerTitle3\", printerTitle[2]);\nflow.set(\"printerTitle4\", printerTitle[3]);\nflow.set(\"printerTitle5\", printerTitle[4]);\nflow.set(\"printerTitle6\", printerTitle[5]);\nflow.set(\"printerTitle7\", printerTitle[6]);\nflow.set(\"printerTitle8\", printerTitle[7]);\nflow.set(\"printerTitle9\", printerTitle[8]);\nflow.set(\"printerTitle10\", printerTitle[9]);\nflow.set(\"printerTitle11\", printerTitle[10]);\nflow.set(\"printerTitle12\", printerTitle[11]);\nflow.set(\"printerTitle13\", printerTitle[12]);\nflow.set(\"printerTitle14\", printerTitle[13]);\n\nflow.set(\"printerStatus1\", printerStatus[0]);\nflow.set(\"printerStatus2\", printerStatus[1]);\nflow.set(\"printerStatus3\", printerStatus[2]);\nflow.set(\"printerStatus4\", printerStatus[3]);\nflow.set(\"printerStatus5\", printerStatus[4]);\nflow.set(\"printerStatus6\", printerStatus[5]);\nflow.set(\"printerStatus7\", printerStatus[6]);\nflow.set(\"printerStatus8\", printerStatus[7]);\nflow.set(\"printerStatus9\", printerStatus[8]);\nflow.set(\"printerStatus10\", printerStatus[9]);\nflow.set(\"printerStatus11\", printerStatus[10]);\nflow.set(\"printerStatus12\", printerStatus[11]);\nflow.set(\"printerStatus13\", printerStatus[12]);\nflow.set(\"printerStatus14\", printerStatus[13]);\n\nmsg.payload = printerColor;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "9e141486da85180b",
+                "72b84f27cd40f69f",
+                "585e48fc3bd66cc9",
+                "905e0d359710f9e0",
+                "2d18eac5705f0e8f",
+                "23aba9e2deb8fd87",
+                "7e59495c41ed8ece",
+                "ccde5f85689022fe",
+                "ab7cd0929332afda",
+                "a98f2c3f8d7963c3",
+                "12427c96c1356137",
+                "1484f6b0ccaeb3ae",
+                "5bf143a88e403bd1",
+                "60ae49294cfad8ca",
+                "c1a58c832accdb62"
+            ]
+        ]
+    },
+    {
+        "id": "f25df1209eac05b1",
+        "type": "debug",
+        "z": "867919451c2ce60b",
+        "name": "debug 69",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "72a1af1bc75921b7",
+        "type": "json",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "f25df1209eac05b1"
+            ]
+        ]
+    },
+    {
+        "id": "9e141486da85180b",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "NA",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Red",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 340,
+        "wires": [
+            [
+                "b3396d46d6a219e0",
+                "f7def3e51a4f0fd0",
+                "195aec45705c0d53"
+            ]
+        ]
+    },
+    {
+        "id": "d094bec50c69bc3f",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "Convert ID to Title",
+        "func": "var idList = [1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813];\nvar cartNum = msg.payload - 1800;\nvar titleList = ['Bambu Lab X1-Cabon', 'Creality V1-Pro 01', 'Creality V1-Pro 02', 'Creality V1-Pro 03', 'Creality V1-Pro 05', 'Creality V1-Pro 06', 'Creality V1-Pro 07', 'Creality V1-Pro 08', 'Creality V1-Pro 09', 'Creality V1-Pro 10', 'Creality V1-Pro 11', 'Creality V1-Pro 12', 'Creality K1-Max 01','Creality K1-Max 02'];\nvar printerTitle = titleList[cartNum];\nvar worker_id = flow.get('worker_id');\nif (cartNum == 0){\n    flow.set('printerTitle1',worker_id);\n}\nelse if (cartNum == 1) {\n    flow.set('printerTitle2', worker_id);\n}\nelse if (cartNum == 2) {\n    flow.set('printerTitle3', worker_id);\n}\nelse if (cartNum == 3) {\n    flow.set('printerTitle4', worker_id);\n}\nelse if (cartNum == 4) {\n    flow.set('printerTitle5', worker_id);\n}\nelse if (cartNum == 5) {\n    flow.set('printerTitle6', worker_id);\n}\nelse if (cartNum == 6) {\n    flow.set('printerTitle7', worker_id);\n}\nelse if (cartNum == 7) {\n    flow.set('printerTitle8', worker_id);\n}\nelse if (cartNum == 8) {\n    flow.set('printerTitle9', worker_id);\n}\nelse if (cartNum == 9) {\n    flow.set('printerTitle10', worker_id);\n}\nelse if (cartNum == 10) {\n    flow.set('printerTitle11', worker_id);\n}\nelse if (cartNum == 11) {\n    flow.set('printerTitle12', worker_id);\n}\nelse if (cartNum == 12) {\n    flow.set('printerTitle13', worker_id);\n}\nelse if (cartNum == 13) {\n    flow.set('printerTitle14', worker_id);\n}\nmsg.payload = printerTitle;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 1280,
+        "wires": [
+            [
+                "6a35f995fb319b50",
+                "1484f6b0ccaeb3ae",
+                "a98f2c3f8d7963c3",
+                "ab7cd0929332afda",
+                "2d18eac5705f0e8f",
+                "ccde5f85689022fe",
+                "12427c96c1356137",
+                "7e59495c41ed8ece",
+                "23aba9e2deb8fd87",
+                "905e0d359710f9e0",
+                "72b84f27cd40f69f",
+                "585e48fc3bd66cc9",
+                "5bf143a88e403bd1",
+                "60ae49294cfad8ca",
+                "c1a58c832accdb62"
+            ]
+        ]
+    },
+    {
+        "id": "6a35f995fb319b50",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Set flow.equipment",
+        "rules": [
+            {
+                "t": "set",
+                "p": "equipment",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 1280,
+        "wires": [
+            [
+                "f1fd23fcb99b26ed"
+            ]
+        ]
+    },
+    {
+        "id": "f1fd23fcb99b26ed",
+        "type": "switch",
+        "z": "867919451c2ce60b",
+        "name": "equipment Null?",
+        "property": "equipment",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1020,
+        "y": 1280,
+        "wires": [
+            [
+                "e18e9246002689e2"
+            ]
+        ]
+    },
+    {
+        "id": "e18e9246002689e2",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "SELECT ID",
+        "func": "var equipment = flow.get(\"equipment\");\n//msg.payload = sheetInsert\n\n\nmsg.params = [equipment];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 1280,
+        "wires": [
+            [
+                "fbf5f7f903799dce"
+            ]
+        ]
+    },
+    {
+        "id": "fbf5f7f903799dce",
+        "type": "postgrestor",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "query": "SELECT id FROM equipments WHERE title = $1;",
+        "postgresDB": "d37f48e234e2b6f4",
+        "output": true,
+        "outputs": 1,
+        "x": 1410,
+        "y": 1280,
+        "wires": [
+            [
+                "b518ff2aa2f371b2"
+            ]
+        ]
+    },
+    {
+        "id": "b518ff2aa2f371b2",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "Get equ_id from database",
+        "func": "msg = msg.payload;\nvar id = msg['rows'][0]['id'];\nmsg.payload = id;\nflow.set('equ_id',id);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 1380,
+        "wires": [
+            [
+                "24c280725fc87662"
+            ]
+        ]
+    },
+    {
+        "id": "24c280725fc87662",
+        "type": "switch",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "property": "id",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "null",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 1380,
+        "wires": [
+            [
+                "e0a11e74c5f70a02"
+            ]
+        ]
+    },
+    {
+        "id": "ec13dd57ba8014a4",
+        "type": "postgrestor",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "query": "UPDATE printer SET borrower_id = $2, date_updated=$3, time_updated=$4, status=$5 WHERE equipment_id = $1;",
+        "postgresDB": "d37f48e234e2b6f4",
+        "output": true,
+        "outputs": 1,
+        "x": 830,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0a11e74c5f70a02",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "Update record",
+        "func": "var equipment_id = flow.get(\"equ_id\");\nvar maker_id = flow.get(\"id\");\nvar date_borrowed = flow.get(\"date\");\nvar time_borrowed = flow.get(\"time\");\nvar status = false;\n\nmsg.params = [equipment_id, maker_id, date_borrowed, time_borrowed, status];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1380,
+        "wires": [
+            [
+                "ec13dd57ba8014a4",
+                "605d066aabb574be"
+            ]
+        ]
+    },
+    {
+        "id": "97f9254eeeae650f",
+        "type": "inject",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1440,
+        "wires": [
+            [
+                "e45c0e368bc0c8ef",
+                "a5166222755e6257",
+                "0a8024eb1a77f09c"
+            ]
+        ]
+    },
+    {
+        "id": "e45c0e368bc0c8ef",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "current time",
+        "func": "var message = {};\nvar time = 0;\nvar date = 0;\nvar year = 0;\nvar month = 0;\nvar day = 0;\n// Get Time and convertit to hours (time[0]) and minutes (time[1])\ntime = new Date().toISOString();\ndate = time.split(\"T\")[0];\nyear = date.split(\"-\")[0];\nmonth = date.split(\"-\")[1];\nday = date.split(\"-\")[2];\ntime = time.split(\"T\")[1].split(\".\")[0];\ntime = time.split(\":\");\n// Adjust time to our timezone and crops it to 24h\ntime[0] = (parseInt(time[0]) + 8)\nif (time[0] >= 25) {\n    time[0] -= 24;\n    day += 1\n}\n// Adjust time to spell \"9\" instead of \"09\" \n// and e.g. \"12 Uhr\" instead of \"12 Uhr 0\"\ntime[1] = parseInt(time[1])\nif (time[1] === 0) {\n    time[1] = \"\";\n}\nflow.set(\"date\", year + \"-\" + month + \"-\" + day);\nflow.set(\"time\", time[0] + \":\" + time[1] + \":\" + time[2] + \".000+08:00\");\nflow.set('timeHK', time[0] + \":\" + time[1] + \":\" + time[2]);\n// Create text refered to ppython datetime format \"%Y-%m-%d %H:%M:%S.%f%z\"\nmessage.payload = \"Date: \" + year + \"-\" + month + \"-\" + day + \"\\nTime: \"+ time[0]+\":\"+ time[1]+\":\" + time[2] +\".000+08:00\";\nreturn message;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3aaefdd4aed7284",
+        "type": "inject",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "printerCart1",
+        "payloadType": "flow",
+        "x": 960,
+        "y": 220,
+        "wires": [
+            [
+                "b0827b20f3069ab1"
+            ]
+        ]
+    },
+    {
+        "id": "b0827b20f3069ab1",
+        "type": "debug",
+        "z": "867919451c2ce60b",
+        "name": "debug 70",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "585e48fc3bd66cc9",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Bambu Lab",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor1",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled1",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "40f97e974f36702c"
+            ]
+        ]
+    },
+    {
+        "id": "72b84f27cd40f69f",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "K1-Max 01",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle13",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor13",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled13",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 580,
+        "wires": [
+            [
+                "b2585e54708d1ced"
+            ]
+        ]
+    },
+    {
+        "id": "2d18eac5705f0e8f",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 03",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle4",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor4",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled4",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 720,
+        "wires": [
+            [
+                "eab0cabe10549513"
+            ]
+        ]
+    },
+    {
+        "id": "23aba9e2deb8fd87",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 02",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor3",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled3",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 720,
+        "wires": [
+            [
+                "a95447cc0cc5c8f9"
+            ]
+        ]
+    },
+    {
+        "id": "5bf143a88e403bd1",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 01",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor2",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled2",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620,
+        "y": 720,
+        "wires": [
+            [
+                "c78138c48d94c746"
+            ]
+        ]
+    },
+    {
+        "id": "905e0d359710f9e0",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "K1-Max 02",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle14",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor14",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled14",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 580,
+        "wires": [
+            [
+                "042ec307ff1a7deb"
+            ]
+        ]
+    },
+    {
+        "id": "7e59495c41ed8ece",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 05",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle6",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor6",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled6",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 880,
+        "wires": [
+            [
+                "c96897762810edb3"
+            ]
+        ]
+    },
+    {
+        "id": "ccde5f85689022fe",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro -06",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle7",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor7",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled7",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 880,
+        "wires": [
+            [
+                "a7217897640bb083"
+            ]
+        ]
+    },
+    {
+        "id": "ab7cd0929332afda",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 07",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle8",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor8",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled8",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 880,
+        "wires": [
+            [
+                "1f4e62e9d5078574"
+            ]
+        ]
+    },
+    {
+        "id": "60ae49294cfad8ca",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 04",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle5",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor5",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled5",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620,
+        "y": 880,
+        "wires": [
+            [
+                "d2139ec5b75f7a9d"
+            ]
+        ]
+    },
+    {
+        "id": "c1a58c832accdb62",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 08",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle9",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor9",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled9",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1620,
+        "y": 1040,
+        "wires": [
+            [
+                "6914e7cc88154cab"
+            ]
+        ]
+    },
+    {
+        "id": "1484f6b0ccaeb3ae",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 09",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle10",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor10",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled10",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 1040,
+        "wires": [
+            [
+                "04219805d421f851"
+            ]
+        ]
+    },
+    {
+        "id": "12427c96c1356137",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 10",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle11",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor11",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled11",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 1040,
+        "wires": [
+            [
+                "3e613655df1da01f"
+            ]
+        ]
+    },
+    {
+        "id": "a98f2c3f8d7963c3",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "V1-Pro 11",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "printerTitle12",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "printerColor12",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "printerEnabled12",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 1040,
+        "wires": [
+            [
+                "c2619d9c24260689"
+            ]
+        ]
+    },
+    {
+        "id": "47543d6aa1be21dd",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "dd1a2d9088add216",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": " Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Red",
+        "className": "",
+        "icon": "home",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "605d066aabb574be"
+            ]
+        ]
+    },
+    {
+        "id": "605d066aabb574be",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "reset id",
+        "rules": [
+            {
+                "t": "set",
+                "p": "id",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "worker_id",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "c2e622558b630ea1"
+            ]
+        ]
+    },
+    {
+        "id": "486fe3f050356407",
+        "type": "function",
+        "z": "867919451c2ce60b",
+        "name": "worker_id",
+        "func": "var worker_id = flow.get('id');\nworker_id = 'XXXX' + worker_id.substr(4, worker_id.length );\nflow.set('worker_id', worker_id);\nmsg.payload = worker_id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 180,
+        "wires": [
+            [
+                "b0827b20f3069ab1"
+            ]
+        ]
+    },
+    {
+        "id": "23dc9d0cb71e88c0",
+        "type": "ui_media",
+        "z": "867919451c2ce60b",
+        "group": "73ffd7c41e8b8b03",
+        "name": "",
+        "width": 10,
+        "height": 8,
+        "order": 1,
+        "category": "media",
+        "file": "3d_print_Floor_Plan_SUMMER.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 790,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9678514640a83882",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 39,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3a1fcbd5233a6d8",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 1 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "9678514640a83882"
+            ]
+        ]
+    },
+    {
+        "id": "d6b39b535d8ed881",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 34,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0445ea16f2a486d3",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 13 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "d6b39b535d8ed881"
+            ]
+        ]
+    },
+    {
+        "id": "c6df5d66e8ab5f39",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 33,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 530,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe2b38745eefca22",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 14 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 620,
+        "wires": [
+            [
+                "c6df5d66e8ab5f39"
+            ]
+        ]
+    },
+    {
+        "id": "8139bf8f3ed88c68",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 7,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc68b369f9bad87f",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 2 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 760,
+        "wires": [
+            [
+                "8139bf8f3ed88c68"
+            ]
+        ]
+    },
+    {
+        "id": "c9b1510900b1f2fa",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32dcf4bf94325231",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 3 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 760,
+        "wires": [
+            [
+                "c9b1510900b1f2fa"
+            ]
+        ]
+    },
+    {
+        "id": "9182e471833a56ae",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b95e70ada75ff77",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 4 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "9182e471833a56ae"
+            ]
+        ]
+    },
+    {
+        "id": "b333365af0f806dd",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd7b7124d6b5feed",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 5 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 920,
+        "wires": [
+            [
+                "b333365af0f806dd"
+            ]
+        ]
+    },
+    {
+        "id": "baa6dc46e6f9fead",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 16,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14677fda4ab734cf",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 6 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 920,
+        "wires": [
+            [
+                "baa6dc46e6f9fead"
+            ]
+        ]
+    },
+    {
+        "id": "13191b20d99c832f",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 17,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7193635519741a72",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 7 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 920,
+        "wires": [
+            [
+                "13191b20d99c832f"
+            ]
+        ]
+    },
+    {
+        "id": "40714efe1537b011",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 18,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ca4f6d74295110e",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 8 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "40714efe1537b011"
+            ]
+        ]
+    },
+    {
+        "id": "c88b9df54133d925",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 23,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1630,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9ba38b308f3438e",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 9 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 1080,
+        "wires": [
+            [
+                "c88b9df54133d925"
+            ]
+        ]
+    },
+    {
+        "id": "259583060b6c5a3b",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 24,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1190,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7007f6c11644729f",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 10 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 1080,
+        "wires": [
+            [
+                "259583060b6c5a3b"
+            ]
+        ]
+    },
+    {
+        "id": "4fbfd6e06ef05d50",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 25,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 750,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0242dae78357d13a",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 11 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1080,
+        "wires": [
+            [
+                "4fbfd6e06ef05d50"
+            ]
+        ]
+    },
+    {
+        "id": "67f5ded5e968d7df",
+        "type": "ui_button",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 26,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{topic}}",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "{{payload}}",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc944fda6c5051d5",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "Printer 12 Time",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "White",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 1080,
+        "wires": [
+            [
+                "67f5ded5e968d7df"
+            ]
+        ]
+    },
+    {
+        "id": "7789a17e497084e0",
+        "type": "inject",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "id",
+        "payloadType": "flow",
+        "x": 1030,
+        "y": 60,
+        "wires": [
+            [
+                "cf295dffba17587b"
+            ]
+        ]
+    },
+    {
+        "id": "cf295dffba17587b",
+        "type": "debug",
+        "z": "867919451c2ce60b",
+        "name": "debug 71",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c95455d5aab6fa85",
+        "type": "switch",
+        "z": "867919451c2ce60b",
+        "name": "Empty?",
+        "property": "id",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 1280,
+        "wires": [
+            [
+                "7ba8918ef0035a03"
+            ]
+        ]
+    },
+    {
+        "id": "7ba8918ef0035a03",
+        "type": "switch",
+        "z": "867919451c2ce60b",
+        "name": "Null?",
+        "property": "id",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "d094bec50c69bc3f"
+            ]
+        ]
+    },
+    {
+        "id": "a5166222755e6257",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "timeHK",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1500,
+        "wires": [
+            [
+                "cec4af08ddd27b43"
+            ]
+        ]
+    },
+    {
+        "id": "0a8024eb1a77f09c",
+        "type": "change",
+        "z": "867919451c2ce60b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "date",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 1560,
+        "wires": [
+            [
+                "b3f7e04e60814059"
+            ]
+        ]
+    },
+    {
+        "id": "cec4af08ddd27b43",
+        "type": "ui_text",
+        "z": "867919451c2ce60b",
+        "group": "dd1a2d9088add216",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "<font size=5> Time:",
+        "format": "<font size=5>{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "b3f7e04e60814059",
+        "type": "ui_text",
+        "z": "867919451c2ce60b",
+        "group": "dd1a2d9088add216",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "<font size=5> Date:",
+        "format": "<font size=5>{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 630,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "037b930b896946a6",
+        "type": "ui_template",
+        "z": "867919451c2ce60b",
+        "group": "5e16e5f7a9e43fbf",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    var el = document.querySelectorAll(\"input[type=\\\"password\\\"\")[0],\n    \n        setFocus = function() {\n            if (el) {\n                el.focus();\n            }\n            \n            setTimeout(setFocus, 100);\n        };\n    \n    setFocus();\n    \n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1060,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab5ac870f0badd2f",
+        "type": "ui_text",
+        "z": "867919451c2ce60b",
+        "group": "5e16e5f7a9e43fbf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "<font size=5> <font color=red>Step 2: <font color=black>Click the 3D Printer to use",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "dd1a2d9088add216",
+        "type": "ui_group",
+        "name": "Maker_Info",
+        "tab": "255a8096c2b7e85d",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e16e5f7a9e43fbf",
+        "type": "ui_group",
+        "name": "3D Printer",
+        "tab": "255a8096c2b7e85d",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d37f48e234e2b6f4",
+        "type": "postgresDB",
+        "name": "postgres@192.168.50.250:5432/booking",
+        "host": "192.168.50.250",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "booking",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "1",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "Sum2023mer!",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "73ffd7c41e8b8b03",
+        "type": "ui_group",
+        "name": "3D_Printer_Map",
+        "tab": "255a8096c2b7e85d",
+        "order": 3,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "255a8096c2b7e85d",
+        "type": "ui_tab",
+        "name": "3D_Printer",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    }
+]
