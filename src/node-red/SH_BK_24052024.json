@@ -1,0 +1,350 @@
+[
+    {
+        "id": "dd7755029065cdf2",
+        "type": "mqtt in",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "topic": "IEMakerLab/attendance",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "82351cecb8fdb157",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "8ce75a04e9066e8c"
+            ]
+        ]
+    },
+    {
+        "id": "8ce75a04e9066e8c",
+        "type": "json",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "a09de9a4b65ec788",
+                "4ff9814a6dfbf8c6"
+            ]
+        ]
+    },
+    {
+        "id": "4ff9814a6dfbf8c6",
+        "type": "change",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "id",
+                "pt": "flow",
+                "to": "payload.ID",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "date",
+                "pt": "flow",
+                "to": "payload.Datetime",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "loc",
+                "pt": "flow",
+                "to": "payload.Location",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "8785520dd21481fa"
+            ]
+        ]
+    },
+    {
+        "id": "8785520dd21481fa",
+        "type": "function",
+        "z": "944775adf5243a0a",
+        "name": "function 6",
+        "func": "var id = flow.get(\"id\");\nvar datetime = flow.get(\"date\");\nvar location = flow.get(\"loc\");\n\n\n\nmsg.params = [id, datetime, location];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 120,
+        "wires": [
+            [
+                "f064895ebcfc9502"
+            ]
+        ]
+    },
+    {
+        "id": "a09de9a4b65ec788",
+        "type": "debug",
+        "z": "944775adf5243a0a",
+        "name": "debug 64",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f064895ebcfc9502",
+        "type": "postgrestor",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "query": "INSERT INTO attendance (id,datetime,location) VALUES ($1, $2, $3);",
+        "postgresDB": "d37f48e234e2b6f4",
+        "output": true,
+        "outputs": 1,
+        "x": 930,
+        "y": 120,
+        "wires": [
+            [
+                "1e55d9197531dbd4"
+            ]
+        ]
+    },
+    {
+        "id": "1e55d9197531dbd4",
+        "type": "debug",
+        "z": "944775adf5243a0a",
+        "name": "debug 65",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b8d3d7f488128234",
+        "type": "mqtt in",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "topic": "IEMakerLab/visit_attendance",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "82351cecb8fdb157",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "47baa3ad25563f1c"
+            ]
+        ]
+    },
+    {
+        "id": "47baa3ad25563f1c",
+        "type": "json",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "fc5f9d537244d323",
+                "7949c838807095c8"
+            ]
+        ]
+    },
+    {
+        "id": "7949c838807095c8",
+        "type": "change",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "id",
+                "pt": "flow",
+                "to": "payload.ID",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "date",
+                "pt": "flow",
+                "to": "payload.Datetime",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "loc",
+                "pt": "flow",
+                "to": "payload.Location",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "79e97d7abc6699be"
+            ]
+        ]
+    },
+    {
+        "id": "79e97d7abc6699be",
+        "type": "function",
+        "z": "944775adf5243a0a",
+        "name": "function 7",
+        "func": "var id = flow.get(\"id\");\nvar datetime = flow.get(\"date\");\nvar location = flow.get(\"loc\");\nvar type = id.slice(-1);\nif (type == \"D\") {\n    type =\"Degree Student\";\n} else if(type == \"R\"){\n    type = \"Research Student\";\n} else if(type == \"G\"){\n    type = \"Master Student\";\n} else {\n    type = \"Staff\";\n}\n\n\nmsg.params = [id, datetime, location, type];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": [
+            [
+                "c2c2b630643f1df6"
+            ]
+        ]
+    },
+    {
+        "id": "fc5f9d537244d323",
+        "type": "debug",
+        "z": "944775adf5243a0a",
+        "name": "debug 66",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c2c2b630643f1df6",
+        "type": "postgrestor",
+        "z": "944775adf5243a0a",
+        "name": "",
+        "query": "INSERT INTO visitor (id,datetime,location,type) VALUES ($1, $2, $3, $4);",
+        "postgresDB": "d37f48e234e2b6f4",
+        "output": true,
+        "outputs": 1,
+        "x": 930,
+        "y": 280,
+        "wires": [
+            [
+                "6f3b9772de83bb2a"
+            ]
+        ]
+    },
+    {
+        "id": "6f3b9772de83bb2a",
+        "type": "debug",
+        "z": "944775adf5243a0a",
+        "name": "debug 67",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "82351cecb8fdb157",
+        "type": "mqtt-broker",
+        "name": "hivemq.com",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d37f48e234e2b6f4",
+        "type": "postgresDB",
+        "name": "postgres@192.168.50.250:5432/booking",
+        "host": "192.168.50.250",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "booking",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "1",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "Sum2023mer!",
+        "passwordFieldType": "str"
+    }
+]
